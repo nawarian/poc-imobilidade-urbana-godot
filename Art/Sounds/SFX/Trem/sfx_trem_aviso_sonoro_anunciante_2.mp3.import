@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_trem_aviso_sonoro_anunciante_2.mp3-3f1cb8bbbe8c9424d338788a678ca365.mp3str"
+
+[deps]
+
+source_file="res://Art/Sounds/SFX/Trem/sfx_trem_aviso_sonoro_anunciante_2.mp3"
+dest_files=[ "res://.import/sfx_trem_aviso_sonoro_anunciante_2.mp3-3f1cb8bbbe8c9424d338788a678ca365.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

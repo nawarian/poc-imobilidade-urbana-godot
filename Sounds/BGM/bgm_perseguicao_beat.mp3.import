@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bgm_perseguicao_beat.mp3-934d614bc7935110dae4e47902933421.mp3str"
+
+[deps]
+
+source_file="res://Sounds/BGM/bgm_perseguicao_beat.mp3"
+dest_files=[ "res://.import/bgm_perseguicao_beat.mp3-934d614bc7935110dae4e47902933421.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

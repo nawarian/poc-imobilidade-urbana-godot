@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bgm_sigma.mp3-83fc758558caf2acf685595e75b22c7b.mp3str"
+
+[deps]
+
+source_file="res://Sounds/BGM/bgm_sigma.mp3"
+dest_files=[ "res://.import/bgm_sigma.mp3-83fc758558caf2acf685595e75b22c7b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

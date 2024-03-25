@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_monstro_via_mobilidade.mp3-21bc1140f328f844c4588806666f72f3.mp3str"
+
+[deps]
+
+source_file="res://Sounds/SFX/Personagens/sfx_monstro_via_mobilidade.mp3"
+dest_files=[ "res://.import/sfx_monstro_via_mobilidade.mp3-21bc1140f328f844c4588806666f72f3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

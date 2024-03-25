@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_monstro_jumpscare.mp3-9a29d0d4b934def7a8f5d7a71a5051c0.mp3str"
+
+[deps]
+
+source_file="res://Sounds/SFX/Personagens/sfx_monstro_jumpscare.mp3"
+dest_files=[ "res://.import/sfx_monstro_jumpscare.mp3-9a29d0d4b934def7a8f5d7a71a5051c0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

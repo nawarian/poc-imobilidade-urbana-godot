@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_menu_timer.mp3-1e0819e18b91e453ac8172608b978c86.mp3str"
+
+[deps]
+
+source_file="res://Art/Sounds/SFX/Menu/sfx_menu_timer.mp3"
+dest_files=[ "res://.import/sfx_menu_timer.mp3-1e0819e18b91e453ac8172608b978c86.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

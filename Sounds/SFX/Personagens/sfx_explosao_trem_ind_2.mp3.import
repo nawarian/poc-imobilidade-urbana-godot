@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_explosao_trem_ind_2.mp3-1fc3224fe3de3955b63c477c2487044c.mp3str"
+
+[deps]
+
+source_file="res://Sounds/SFX/Personagens/sfx_explosao_trem_ind_2.mp3"
+dest_files=[ "res://.import/sfx_explosao_trem_ind_2.mp3-1fc3224fe3de3955b63c477c2487044c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_trem_aviso_sonoro_porta.mp3-ad883e06bdda8936d51354dff64ce42d.mp3str"
+
+[deps]
+
+source_file="res://Art/Sounds/SFX/Trem/sfx_trem_aviso_sonoro_porta.mp3"
+dest_files=[ "res://.import/sfx_trem_aviso_sonoro_porta.mp3-ad883e06bdda8936d51354dff64ce42d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

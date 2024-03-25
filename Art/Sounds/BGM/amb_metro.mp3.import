@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/amb_metro.mp3-090755839d17fd9597cc9edb49279334.mp3str"
+
+[deps]
+
+source_file="res://Art/Sounds/BGM/amb_metro.mp3"
+dest_files=[ "res://.import/amb_metro.mp3-090755839d17fd9597cc9edb49279334.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

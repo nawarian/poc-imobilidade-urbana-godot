@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_main_passo_2.mp3-4a56c92c32f421afd201339fa885be5b.mp3str"
+
+[deps]
+
+source_file="res://Art/Sounds/SFX/Personagens/sfx_main_passo_2.mp3"
+dest_files=[ "res://.import/sfx_main_passo_2.mp3-4a56c92c32f421afd201339fa885be5b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

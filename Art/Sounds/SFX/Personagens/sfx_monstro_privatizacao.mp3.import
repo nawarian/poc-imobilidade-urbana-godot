@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_monstro_privatizacao.mp3-50ac6fedd6057362614c8b0b1341b18a.mp3str"
+
+[deps]
+
+source_file="res://Art/Sounds/SFX/Personagens/sfx_monstro_privatizacao.mp3"
+dest_files=[ "res://.import/sfx_monstro_privatizacao.mp3-50ac6fedd6057362614c8b0b1341b18a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

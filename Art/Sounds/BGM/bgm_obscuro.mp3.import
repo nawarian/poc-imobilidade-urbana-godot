@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bgm_obscuro.mp3-495d42f360160355d11b7cab1f5d6994.mp3str"
+
+[deps]
+
+source_file="res://Art/Sounds/BGM/bgm_obscuro.mp3"
+dest_files=[ "res://.import/bgm_obscuro.mp3-495d42f360160355d11b7cab1f5d6994.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sfx_main_passo_4.wav-a2f72fe2ce6fd99ee24f270eeb494402.sample"
+
+[deps]
+
+source_file="res://Player/Assets/sfx/sfx_main_passo_4.wav"
+dest_files=[ "res://.import/sfx_main_passo_4.wav-a2f72fe2ce6fd99ee24f270eeb494402.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

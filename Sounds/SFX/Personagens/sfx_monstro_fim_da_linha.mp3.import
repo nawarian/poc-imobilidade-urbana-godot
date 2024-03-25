@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_monstro_fim_da_linha.mp3-710186fc45c6816a677eca775663a6b8.mp3str"
+
+[deps]
+
+source_file="res://Sounds/SFX/Personagens/sfx_monstro_fim_da_linha.mp3"
+dest_files=[ "res://.import/sfx_monstro_fim_da_linha.mp3-710186fc45c6816a677eca775663a6b8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
