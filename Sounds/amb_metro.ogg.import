@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/amb_metro.ogg-2453a0cb211db29946c9c064e9c76747.oggstr"
+
+[deps]
+
+source_file="res://Sounds/amb_metro.ogg"
+dest_files=[ "res://.import/amb_metro.ogg-2453a0cb211db29946c9c064e9c76747.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
