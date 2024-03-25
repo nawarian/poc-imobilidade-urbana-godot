@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://TrainInterior/Train.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Camera2D.gd" type="Script" id=3]
 [ext_resource path="res://amb_metro.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Gameplay.gd" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+resource_local_to_scene = true
+extents = Vector2( 138, 450 )
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource( 5 )
@@ -24,3 +28,16 @@ script = ExtResource( 3 )
 [node name="BackgroundNoise" type="AudioStreamPlayer2D" parent="Camera2D"]
 stream = ExtResource( 4 )
 autoplay = true
+
+[node name="LeftTouch" type="TouchScreenButton" parent="Camera2D"]
+position = Vector2( -767, -449 )
+shape = SubResource( 1 )
+
+[node name="RightTouch" type="TouchScreenButton" parent="Camera2D"]
+position = Vector2( 491, -449 )
+shape = SubResource( 1 )
+
+[connection signal="pressed" from="Camera2D/LeftTouch" to="Camera2D" method="_on_LeftTouch_pressed"]
+[connection signal="released" from="Camera2D/LeftTouch" to="Camera2D" method="_on_LeftTouch_released"]
+[connection signal="pressed" from="Camera2D/RightTouch" to="Camera2D" method="_on_RightTouch_pressed"]
+[connection signal="released" from="Camera2D/RightTouch" to="Camera2D" method="_on_RightTouch_released"]
