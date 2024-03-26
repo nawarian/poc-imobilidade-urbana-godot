@@ -11,6 +11,8 @@ enum PlayerState {
 }
 var state
 
+var flashlight_on = false
+
 # SFX
 var sfx_player: AudioStreamPlayer2D
 var walk_sfx: Array = []
@@ -27,7 +29,7 @@ var direction
 func _ready():
 	state = PlayerState.IDLE
 	direction = PlayerDirection.RIGHT
-	sfx_player = $AudioStreamPlayer2D
+	sfx_player = $StepsStreamPlayer
 	
 	# Load walking sounds
 	walk_sfx.append(load("res://Player/Assets/sfx/sfx_main_passo_1.wav"))
@@ -46,6 +48,12 @@ func _process(delta):
 		direction = PlayerDirection.LEFT
 	elif (velocity.x > 0):
 		direction = PlayerDirection.RIGHT
+
+	if (Input.is_action_pressed("flashlight_toggle") && !$LightStreamPlayer.playing):
+		flashlight_on = !flashlight_on
+		$FlashlightSource.enabled = !$FlashlightSource.enabled
+		$FlashlightRay.enabled = !$FlashlightRay.enabled
+		$LightStreamPlayer.play()
 
 	update_sfx()
 	update_animation()
@@ -77,8 +85,16 @@ func update_sfx():
 func update_animation():
 	if (direction == PlayerDirection.LEFT && !$AnimatedSprite.flip_h):
 		$AnimatedSprite.flip_h = true
+		$FlashlightSource.position.x = -52
+		$FlashlightRay.position.x = -426
+		$FlashlightRay.position.y = -18
+		$FlashlightRay.rotation_degrees = 180
 	elif (direction == PlayerDirection.RIGHT && $AnimatedSprite.flip_h):
 		$AnimatedSprite.flip_h = false
+		$FlashlightSource.position.x = 52
+		$FlashlightRay.position.x = 426
+		$FlashlightRay.position.y = -5
+		$FlashlightRay.rotation_degrees = 0
 
 	match state:
 		PlayerState.IDLE:

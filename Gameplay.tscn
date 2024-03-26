@@ -39,6 +39,9 @@ shape = SubResource( 1 )
 position = Vector2( 491, -449 )
 shape = SubResource( 1 )
 
+[node name="DarkCanvasOverlay" type="CanvasModulate" parent="Camera2D"]
+color = Color( 0.0509804, 0.054902, 0.0588235, 1 )
+
 [connection signal="pressed" from="Camera2D/LeftTouch" to="Camera2D" method="_on_LeftTouch_pressed"]
 [connection signal="released" from="Camera2D/LeftTouch" to="Camera2D" method="_on_LeftTouch_released"]
 [connection signal="pressed" from="Camera2D/RightTouch" to="Camera2D" method="_on_RightTouch_pressed"]
