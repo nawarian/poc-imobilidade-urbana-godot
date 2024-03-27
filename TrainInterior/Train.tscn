@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
+[ext_resource path="res://TrainInterior/CeilingLight.tscn" type="PackedScene" id=1]
 [ext_resource path="res://TrainInterior/Assets/metro_int_pequeno.png" type="Texture" id=2]
 
 [sub_resource type="TileSet" id=1]
@@ -47,6 +48,10 @@ resource_local_to_scene = true
 5/shapes = [  ]
 5/z_index = 0
 
+[sub_resource type="StreamTexture" id=2]
+resource_local_to_scene = true
+load_path = "res://.import/flashlight-ray.png-0d771fa85c98734aa5b715cdd8ad29e9.stex"
+
 [node name="Train" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -55,3 +60,41 @@ tile_set = SubResource( 1 )
 cell_size = Vector2( 625, 128 )
 format = 1
 tile_data = PoolIntArray( 0, 3, 0, 1, 4, 0, 2, 5, 0 )
+
+[node name="CeilingLights" type="Node2D" parent="TileMap"]
+
+[node name="CeilingLight" parent="TileMap/CeilingLights" instance=ExtResource( 1 )]
+position = Vector2( 175.75, 35.5 )
+texture = SubResource( 2 )
+
+[node name="CeilingLight2" parent="TileMap/CeilingLights" instance=ExtResource( 1 )]
+position = Vector2( 334, 35.5 )
+texture = SubResource( 2 )
+
+[node name="CeilingLight3" parent="TileMap/CeilingLights" instance=ExtResource( 1 )]
+position = Vector2( 494.5, 35.5 )
+texture = SubResource( 2 )
+
+[node name="CeilingLight4" parent="TileMap/CeilingLights" instance=ExtResource( 1 )]
+position = Vector2( 775.25, 35.5 )
+texture = SubResource( 2 )
+
+[node name="CeilingLight5" parent="TileMap/CeilingLights" instance=ExtResource( 1 )]
+position = Vector2( 935.75, 35.5 )
+texture = SubResource( 2 )
+
+[node name="CeilingLight6" parent="TileMap/CeilingLights" instance=ExtResource( 1 )]
+position = Vector2( 1096.25, 35.5 )
+texture = SubResource( 2 )
+
+[node name="CeilingLight7" parent="TileMap/CeilingLights" instance=ExtResource( 1 )]
+position = Vector2( 1400.75, 35.5 )
+texture = SubResource( 2 )
+
+[node name="CeilingLight8" parent="TileMap/CeilingLights" instance=ExtResource( 1 )]
+position = Vector2( 1560, 35.5 )
+texture = SubResource( 2 )
+
+[node name="CeilingLight9" parent="TileMap/CeilingLights" instance=ExtResource( 1 )]
+position = Vector2( 1721.75, 35.5 )
+texture = SubResource( 2 )

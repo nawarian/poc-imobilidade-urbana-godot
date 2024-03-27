@@ -98,8 +98,8 @@ stream = ExtResource( 4 )
 [node name="FlashlightSource" type="Light2D" parent="."]
 enabled = false
 texture = ExtResource( 5 )
-texture_scale = 0.44
-energy = 1.25
+texture_scale = 0.32
+energy = 0.75
 
 [node name="FlashlightRay" type="Light2D" parent="."]
 position = Vector2( 426, -5 )
@@ -107,4 +107,4 @@ scale = Vector2( 2.06604, 2.06604 )
 enabled = false
 texture = ExtResource( 6 )
 texture_scale = 0.7
-energy = 1.05
+energy = 0.85
