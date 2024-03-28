@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lanterna_apagada.png-ba5b59dd5e2e5d78d5146e875ec5230f.stex"
+path="res://.import/lanterna-apagada.png-c60b818e33b891ff3d815db6a4ae53fb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/UI/EXPORT/lanterna_apagada.png"
-dest_files=[ "res://.import/lanterna_apagada.png-ba5b59dd5e2e5d78d5146e875ec5230f.stex" ]
+source_file="res://lanterna-apagada.png"
+dest_files=[ "res://.import/lanterna-apagada.png-c60b818e33b891ff3d815db6a4ae53fb.stex" ]
 
 [params]
 

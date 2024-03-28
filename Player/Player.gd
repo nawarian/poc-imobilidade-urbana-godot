@@ -49,11 +49,8 @@ func _process(delta):
 	elif (velocity.x > 0):
 		direction = PlayerDirection.RIGHT
 
-	if (Input.is_action_pressed("flashlight_toggle") && !$LightStreamPlayer.playing):
-		flashlight_on = !flashlight_on
-		$FlashlightSource.enabled = !$FlashlightSource.enabled
-		$FlashlightRay.enabled = !$FlashlightRay.enabled
-		$LightStreamPlayer.play()
+	if (Input.is_action_pressed("flashlight_toggle")):
+		toggle_flashlight()
 
 	update_sfx()
 	update_animation()
@@ -103,3 +100,13 @@ func update_animation():
 		PlayerState.WALKING:
 			$AnimatedSprite.play("walk")
 			$AnimatedSprite.speed_scale = 1.8
+
+func toggle_flashlight():
+	if (!$LightStreamPlayer.playing):
+		flashlight_on = !flashlight_on
+		$FlashlightSource.enabled = !$FlashlightSource.enabled
+		$FlashlightRay.enabled = !$FlashlightRay.enabled
+		$LightStreamPlayer.play()
+
+func is_flashlight_on():
+	return flashlight_on

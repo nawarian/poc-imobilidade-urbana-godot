@@ -1,10 +1,13 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://TrainInterior/Train.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Camera2D.gd" type="Script" id=3]
 [ext_resource path="res://amb_metro.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Gameplay.gd" type="Script" id=5]
+[ext_resource path="res://lanterna-apagada.png" type="Texture" id=6]
+[ext_resource path="res://HUD.gd" type="Script" id=7]
+[ext_resource path="res://lanterna-acesa.png" type="Texture" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 resource_local_to_scene = true
@@ -43,8 +46,30 @@ shape = SubResource( 1 )
 color = Color( 0.0509804, 0.054902, 0.0588235, 1 )
 
 [node name="HUD" type="CanvasLayer" parent="Camera2D"]
+script = ExtResource( 7 )
+
+[node name="FlashlightToggleOff" type="TextureButton" parent="Camera2D/HUD"]
+margin_left = 876.0
+margin_top = 423.0
+margin_right = 1004.0
+margin_bottom = 679.0
+rect_scale = Vector2( 0.45, 0.45 )
+shortcut_in_tooltip = false
+texture_normal = ExtResource( 6 )
+
+[node name="FlashlightToggleOn" type="TextureButton" parent="Camera2D/HUD"]
+visible = false
+margin_left = 876.0
+margin_top = 423.0
+margin_right = 1004.0
+margin_bottom = 679.0
+rect_scale = Vector2( 0.45, 0.45 )
+shortcut_in_tooltip = false
+texture_normal = ExtResource( 8 )
 
 [connection signal="pressed" from="Camera2D/LeftTouch" to="Camera2D" method="_on_LeftTouch_pressed"]
 [connection signal="released" from="Camera2D/LeftTouch" to="Camera2D" method="_on_LeftTouch_released"]
 [connection signal="pressed" from="Camera2D/RightTouch" to="Camera2D" method="_on_RightTouch_pressed"]
 [connection signal="released" from="Camera2D/RightTouch" to="Camera2D" method="_on_RightTouch_released"]
+[connection signal="pressed" from="Camera2D/HUD/FlashlightToggleOff" to="Camera2D/HUD" method="_on_FlashlightToggle_pressed"]
+[connection signal="pressed" from="Camera2D/HUD/FlashlightToggleOn" to="Camera2D/HUD" method="_on_FlashlightToggle_pressed"]
