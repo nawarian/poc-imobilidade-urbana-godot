@@ -16,6 +16,8 @@ https://ntmtst.itch.io/poc-imobilidade-urbana-godot
 senha: ntmtst2024
 ```
 
+![Captura de tela do jogo](screenshot-imobilidade.png)
+
 ## Funcionalidades
 
 * Movimento de personagem
