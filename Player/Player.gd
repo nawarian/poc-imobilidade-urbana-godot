@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 # Movement
 var velocity = Vector2()
-var speed = 20000
+var speed = 300
 
 enum PlayerState {
 	IDLE,
@@ -11,7 +11,7 @@ enum PlayerState {
 }
 var state
 
-var flashlight_on = false
+var flashlight_on  = false
 
 # SFX
 var sfx_player: AudioStreamPlayer2D
@@ -63,7 +63,7 @@ func _physics_process(delta):
 	else:
 		velocity = Vector2()
 
-	velocity = move_and_slide(velocity)
+	move_and_collide(velocity)
 
 func update_sfx():
 	if (state != PlayerState.WALKING || walk_sfx.size() == 0):
@@ -77,7 +77,6 @@ func update_sfx():
 		var idx = randi() % walk_sfx.size()
 		sfx_player.stream = walk_sfx[idx]
 		sfx_player.play()
-
 
 func update_animation():
 	if (direction == PlayerDirection.LEFT && !$AnimatedSprite.flip_h):

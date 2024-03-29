@@ -1,17 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://TrainInterior/Train.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Camera2D.gd" type="Script" id=3]
 [ext_resource path="res://amb_metro.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Gameplay.gd" type="Script" id=5]
-[ext_resource path="res://lanterna-apagada.png" type="Texture" id=6]
-[ext_resource path="res://HUD.gd" type="Script" id=7]
-[ext_resource path="res://lanterna-acesa.png" type="Texture" id=8]
-
-[sub_resource type="RectangleShape2D" id=1]
-resource_local_to_scene = true
-extents = Vector2( 115, 256 )
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=6]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource( 5 )
@@ -20,36 +14,9 @@ script = ExtResource( 5 )
 position = Vector2( -3393, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 273, 325 )
+position = Vector2( 360, 325 )
 
-[node name="HUD" type="CanvasLayer" parent="."]
-script = ExtResource( 7 )
-
-[node name="LeftTouch" type="TouchScreenButton" parent="HUD"]
-shape = SubResource( 1 )
-
-[node name="RightTouch" type="TouchScreenButton" parent="HUD"]
-position = Vector2( 794, 0 )
-shape = SubResource( 1 )
-
-[node name="FlashlightToggleOff" type="TextureButton" parent="HUD"]
-anchor_left = 0.912
-anchor_top = 0.757
-anchor_right = 0.912
-anchor_bottom = 0.757
-rect_scale = Vector2( 0.45, 0.45 )
-shortcut_in_tooltip = false
-texture_normal = ExtResource( 6 )
-
-[node name="FlashlightToggleOn" type="TextureButton" parent="HUD"]
-visible = false
-anchor_left = 0.912
-anchor_top = 0.757
-anchor_right = 0.912
-anchor_bottom = 0.757
-rect_scale = Vector2( 0.45, 0.45 )
-shortcut_in_tooltip = false
-texture_normal = ExtResource( 8 )
+[node name="HUD" parent="." instance=ExtResource( 6 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 273, 325 )
@@ -66,14 +33,3 @@ autoplay = true
 
 [node name="DarkCanvasOverlay" type="CanvasModulate" parent="Camera2D"]
 color = Color( 0.0509804, 0.054902, 0.0588235, 1 )
-
-[connection signal="pressed" from="HUD/LeftTouch" to="Camera2D" method="_on_LeftTouch_pressed"]
-[connection signal="pressed" from="HUD/LeftTouch" to="HUD" method="_on_LeftTouch_pressed"]
-[connection signal="released" from="HUD/LeftTouch" to="Camera2D" method="_on_LeftTouch_released"]
-[connection signal="released" from="HUD/LeftTouch" to="HUD" method="_on_LeftTouch_released"]
-[connection signal="pressed" from="HUD/RightTouch" to="HUD" method="_on_RightTouch_pressed"]
-[connection signal="released" from="HUD/RightTouch" to="HUD" method="_on_RightTouch_released"]
-[connection signal="pressed" from="HUD/FlashlightToggleOff" to="HUD" method="_on_FlashlightToggle_pressed"]
-[connection signal="pressed" from="HUD/FlashlightToggleOff" to="HUD" method="_on_FlashlightToggleOff_pressed"]
-[connection signal="pressed" from="HUD/FlashlightToggleOn" to="HUD" method="_on_FlashlightToggle_pressed"]
-[connection signal="pressed" from="HUD/FlashlightToggleOn" to="HUD" method="_on_FlashlightToggleOn_pressed"]
