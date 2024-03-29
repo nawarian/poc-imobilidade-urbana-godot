@@ -37,7 +37,7 @@ volume_db = 7.189
 autoplay = true
 
 [node name="DarkCanvasOverlay" type="CanvasModulate" parent="Camera2D"]
-color = Color( 0.0941176, 0.0941176, 0.121569, 1 )
+color = Color( 0.27451, 0.27451, 0.376471, 1 )
 
 [node name="Background" type="Sprite" parent="Camera2D"]
 position = Vector2( 0, 1 )
