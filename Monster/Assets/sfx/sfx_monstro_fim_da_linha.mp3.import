@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_monstro_fim_da_linha.mp3-900966da8e1b4fa2762c6f9c9071dace.mp3str"
+
+[deps]
+
+source_file="res://Monster/Assets/sfx/sfx_monstro_fim_da_linha.mp3"
+dest_files=[ "res://.import/sfx_monstro_fim_da_linha.mp3-900966da8e1b4fa2762c6f9c9071dace.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

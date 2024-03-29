@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_monstro_extremamente.mp3-dc9df97141abb7b848465a3b80372b33.mp3str"
+
+[deps]
+
+source_file="res://Monster/Assets/sfx/sfx_monstro_extremamente.mp3"
+dest_files=[ "res://.import/sfx_monstro_extremamente.mp3-dc9df97141abb7b848465a3b80372b33.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

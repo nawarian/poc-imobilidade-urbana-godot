@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_monstro_sabesp.mp3-fa44760a82af5f968d81a8f54f21c5e7.mp3str"
+
+[deps]
+
+source_file="res://Monster/Assets/sfx/sfx_monstro_sabesp.mp3"
+dest_files=[ "res://.import/sfx_monstro_sabesp.mp3-fa44760a82af5f968d81a8f54f21c5e7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

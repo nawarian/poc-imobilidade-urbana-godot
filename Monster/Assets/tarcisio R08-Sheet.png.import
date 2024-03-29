@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tarcisio R08-Sheet.png-a25e8521b23fc4f0122717bda211989b.stex"
+path="res://.import/tarcisio R08-Sheet.png-b33f687d371990fb7ed8f6801eadceb0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/monster/tarcisio R08-Sheet.png"
-dest_files=[ "res://.import/tarcisio R08-Sheet.png-a25e8521b23fc4f0122717bda211989b.stex" ]
+source_file="res://Monster/Assets/tarcisio R08-Sheet.png"
+dest_files=[ "res://.import/tarcisio R08-Sheet.png-b33f687d371990fb7ed8f6801eadceb0.stex" ]
 
 [params]
 

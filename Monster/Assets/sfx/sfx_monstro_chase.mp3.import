@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sfx_monstro_chase.mp3-66d277ae2a945abdc323e6fd6c8b65b3.mp3str"
+
+[deps]
+
+source_file="res://Monster/Assets/sfx/sfx_monstro_chase.mp3"
+dest_files=[ "res://.import/sfx_monstro_chase.mp3-66d277ae2a945abdc323e6fd6c8b65b3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
