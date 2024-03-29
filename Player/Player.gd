@@ -57,13 +57,14 @@ func _process(delta):
 
 func _physics_process(delta):
 	if (Input.is_action_pressed("move_left")):
-		velocity.x = -speed * delta
+		velocity.x = -speed
 	elif (Input.is_action_pressed("move_right")):
-		velocity.x = speed * delta
-	else:
-		velocity = Vector2()
+		velocity.x = speed
 
-	move_and_collide(velocity)
+	if (!Input.is_action_pressed("move_left") && !Input.is_action_pressed("move_right")):
+		velocity.x *= 0.0001
+
+	move_and_collide(velocity * delta)
 
 func update_sfx():
 	if (state != PlayerState.WALKING || walk_sfx.size() == 0):

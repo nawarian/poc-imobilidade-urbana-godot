@@ -19,7 +19,6 @@ func _ready():
 	# Load speech sounds
 	speech_sfx.append(load("res://Monster/Assets/sfx/sfx_monstro_dinheiro.mp3"))
 	speech_sfx.append(load("res://Monster/Assets/sfx/sfx_monstro_extremamente.mp3"))
-	speech_sfx.append(load("res://Monster/Assets/sfx/sfx_monstro_fim_da_linha.mp3"))
 	speech_sfx.append(load("res://Monster/Assets/sfx/sfx_monstro_privatizacao.mp3"))
 	speech_sfx.append(load("res://Monster/Assets/sfx/sfx_monstro_sabesp.mp3"))
 	speech_sfx.append(load("res://Monster/Assets/sfx/sfx_monstro_via_mobilidade.mp3"))
