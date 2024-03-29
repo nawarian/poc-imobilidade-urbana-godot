@@ -33,6 +33,7 @@ script = ExtResource( 3 )
 
 [node name="BackgroundNoise" type="AudioStreamPlayer2D" parent="Camera2D"]
 stream = ExtResource( 4 )
+volume_db = 7.189
 autoplay = true
 
 [node name="DarkCanvasOverlay" type="CanvasModulate" parent="Camera2D"]
